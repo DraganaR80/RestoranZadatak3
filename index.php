@@ -1,9 +1,4 @@
-<?php
 
-require_once "../view/potvrda.php";
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
