@@ -21,25 +21,29 @@
 <li> Galerija</li>
 <li> Kontakt</li>
 <li> <img src="images/2611141.png" width="30px" length="30px" > </li>
-<li><h3>NAŠA PRIČA</h3></li>
+<li><h4>NAŠA PRIČA</h4></li>
 
 </ul>
 </div>
 <div class="form">
-<h3> Rezervacija</h3>
-
-<form action="">
+<h2> Rezervacija</h2>
+<br><br>
+<form action="../view/potvrda.php" method="post" id="posalji">
 
 <input type="text" name="name" placeholder=" Ime i prezime" id="Ime">
 
 <br><br>
-<input type="email" name="email" placeholder="adresa"   id="email">
+<input type="email" name="email" placeholder="Email"   id="email">
 
 <br><br>
 
-<input type="phone " name="phone" placeholder="telefon "   id="telefon  ">
+<input type="phone " name="phone" placeholder="Telefon "   id="telefon  ">
+<br><br>
+<input type="date" name="datum" class="datum" >
 
-</form>
+<br> <br>
+<input type="time" name="vreme" class="datum" >
+
 <br><br>
 <select name="people" id="people">
 <option value="2"> 2 osobe</option>
@@ -54,7 +58,8 @@
 
 </select>
 <br><br>
-
+<button type="submit" class="button"> Rezerviši</button>
 </div>
+</form>
 </body>
 </html>
