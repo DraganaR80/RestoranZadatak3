@@ -1,3 +1,10 @@
+<?php
+
+require_once "../view/potvrda.php";
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +35,7 @@
 <div class="form">
 <h2> Rezervacija</h2>
 <br><br>
-<form action="../view/potvrda.php" method="post" id="posalji">
+<form  method="POST"  action="../view/potvrda.php"  id="posalji">
 
 <input type="text" name="name" placeholder=" Ime i prezime" id="Ime">
 
@@ -59,7 +66,9 @@
 </select>
 <br><br>
 <button type="submit" class="button"> Rezerviši</button>
-</div>
+
 </form>
+</div>
+
 </body>
 </html>

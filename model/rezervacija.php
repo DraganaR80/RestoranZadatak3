@@ -94,7 +94,13 @@ public function getid() {
 
 
 
-
+	public static function add($fullName, $email,$phone, $noppl,$date,$time, mysqli $conn){
+		$q= "INSERT INTO restoran (fullName,email,phone,noppl,date,time)
+		VALUES('$fullName','$email','$phone','$noppl','$date','$time')";
+		
+		return $conn->query($q);
+		
+		}
 
 }
 
