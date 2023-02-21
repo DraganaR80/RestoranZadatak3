@@ -10,9 +10,6 @@ if (isset($_POST['fullName'])
 && isset ($_POST['date'])
 && isset ($_POST['time'])){
 
- 
-    
-
     $status= Reservation::add($_POST['fullName'],
     $_POST['email'],
     $_POST['phone'],
@@ -20,6 +17,7 @@ if (isset($_POST['fullName'])
     $_POST['date'],
     $_POST['time'],
     $conn);
+
     If($status){
         echo 'Success';
     }else{
@@ -28,8 +26,17 @@ if (isset($_POST['fullName'])
         echo $status;
         echo "Failed";
     }
+
+}
+
+
+ 
     
-    }
+
+    
+    
+
+    
     
 
 

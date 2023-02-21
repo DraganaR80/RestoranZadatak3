@@ -30,7 +30,7 @@
 <div class="form">
 <h2> Rezervacija</h2>
 <br><br>
-<form  method="POST"  action="../view/potvrda.php"  id="posalji">
+<form  method="POST"  action="view/potvrda.php"  id="posalji">
 
 <input type="text" name="name" placeholder=" Ime i prezime" id="Ime">
 
@@ -64,6 +64,7 @@
 
 </form>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js" ></script>
 </body>
 </html>
