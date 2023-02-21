@@ -2,16 +2,16 @@
 
 class Reservation{
 
-private $id;
-private $fullName;
-private $email;
-private $phone;
-private $noppl;
-private $date;
-private $time;
+public $id;
+public $fullName;
+public $email;
+public $phone;
+public $noppl;
+public $date;
+public $time;
 
 
-public function __construct($id,$fullName, $email,$phone,$noppl,$date,$time)
+public function __construct($id=null,$fullName=null, $email=null,$phone=null,$noppl=null,$date=null,$time=null)
 {
 $this->id=$id;
 $this->fullName=$fullName;
@@ -95,12 +95,23 @@ public function getid() {
 
 
 	public static function add($fullName, $email,$phone, $noppl,$date,$time, mysqli $conn){
-		$q= "INSERT INTO restoran (fullName,email,phone,noppl,date,time)
+		$q= "INSERT INTO rezervacija (fullName,email,phone,noppl,date,time)
 		VALUES('$fullName','$email','$phone','$noppl','$date','$time')";
 		
 		return $conn->query($q);
 		
 		}
+
+
+		public static function getAll(mysqli $conn){
+
+			 $q= " SELECT * FROM rezervacija";
+			 return $conn->query($q);
+
+
+		}
+
+
 
 }
 

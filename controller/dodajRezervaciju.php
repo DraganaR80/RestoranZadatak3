@@ -3,6 +3,8 @@
 require "../dbBroker.php";
 require "../model/rezervacija.php";
 
+if(isset($_POST['rezervisi'])){
+
 if (isset($_POST['fullName']) 
 && isset($_POST['email'])
 && isset($_POST['phone'])
@@ -19,16 +21,15 @@ if (isset($_POST['fullName'])
     $conn);
 
     If($status){
-        echo 'Success';
+        header ("Location:../view/potvrda.php");
     }else{
-    
-    
-        echo $status;
-        echo "Failed";
+
+        echo "Pokusajte ponovo";
+         header ("Location:../index.php");
     }
 
 }
-
+}
 
  
     

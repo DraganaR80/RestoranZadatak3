@@ -9,16 +9,6 @@ request=$.ajax({
     url:"controller/dodajRezervaciju.php",
     type:"post",
     data:serialization,
-})
+}) }
 
-request.done(function(response,textStatus,jqXHR){
-if(response=== "Success"){
-alert("Primljena rezervacija");
-
-} else {
-    alert("Došlo je do greške");
-}
-})
-
-})
 
