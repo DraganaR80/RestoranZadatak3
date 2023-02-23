@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;}
+
+    body{
+        background-image:url(../images/novi\ sad.jpg);
+        font-family: 'Open Sans', sans-serif;
+    }
+     
+       .header>ul  {
+            padding:20px;
+             background-color:rgba(233, 211, 182, 0.507);
+            margin: bottom 5%;
+            position: sticky;
+            top: 0;
+            
+            
+            }
+            ul , a, li {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                padding-right: 3em;
+            
+            color: black;
+            
+            }
+    
+        .Text {
+            margin-top:50px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 30px;
+            padding: 1% 10% 1% 10%;
+    
+            font-size: x-large;
+            font-weight: 300;
+            color: beige;
+
+
+
+        }
+     
+
+    .galerija{
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 300px 300px ;
+        margin: 15%;
+        gap: 30px;
+        row-gap: 70px;
+
+
+    }
+       
+   
+    .galerija .restoran{
+
+        background-color:rgba(228, 240, 241, 0.986);
+    }
+
+    img{
+        margin-top: 10%;
+        transition: transform 0.5s  ease;  
+    
+    }
+    img:hover{
+        transform: scale(1.2); 
+    }
