@@ -32,6 +32,7 @@ if(!$rezervacija){
                     <th>Broj osoba</th>
                     <th>Datum</th>
                     <th>Vreme</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -60,7 +61,7 @@ while($red= $rezervacija->fetch_array()){
                         <td><?php echo $red['noppl'] ?></td>
                         <td><?php echo $red['date'] ?></td>
                         <td><?php echo $red['time'] ?></td>
-                        
+                     
 
 
 
@@ -74,7 +75,7 @@ while($red= $rezervacija->fetch_array()){
                                 <span class="checkmark"></span>
                             </label>
                         </td>
-
+                        <td> <button class="dugmeBrise" id="brisi" >Obriši</button>    </td>
                     </tr>
                     <?php
                 }

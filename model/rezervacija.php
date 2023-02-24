@@ -111,7 +111,14 @@ public function getid() {
 
 		}
 
+public static function deleteById ($id, mysqli $conn){
 
+	$q= " DELETE FROM rezervacija WHERE id=$id";
+
+return $conn->query($q);
+
+
+}
 
 }
 
