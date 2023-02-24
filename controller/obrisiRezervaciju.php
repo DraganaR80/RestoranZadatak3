@@ -5,6 +5,7 @@ require "../model/rezervacija.php";
 
 if(isset($_POST['id'])){
 
+    echo " Post id";
 //if (isset($_POST['fullName']) 
 //&& isset($_POST['email'])
 //&& isset($_POST['phone'])
