@@ -1,0 +1,27 @@
+*{
+    padding: 0px;
+    margin: 0px;}
+
+    body{
+        
+        font-family: 'Open Sans', sans-serif;
+    }
+     
+       .header>ul  {
+            padding:20px;
+             background-color:rgba(233, 211, 182, 0.507);
+            margin: bottom 5%;
+            position: sticky;
+            top: 0;
+            
+            
+            }
+            ul , a, li {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                padding-right: 3em;
+            
+            color: black;
+            
+            }
