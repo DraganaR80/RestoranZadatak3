@@ -1,4 +1,4 @@
-<?
+<?php
 require ("namaHeader.php");
 require("navbar.php");
 

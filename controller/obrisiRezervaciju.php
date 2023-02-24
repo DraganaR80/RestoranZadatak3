@@ -5,7 +5,7 @@ require "../model/rezervacija.php";
 
 if(isset($_POST['id'])){
 
-    echo " Post id";
+  
 //if (isset($_POST['fullName']) 
 //&& isset($_POST['email'])
 //&& isset($_POST['phone'])
@@ -21,16 +21,18 @@ if(isset($_POST['id'])){
     //$_POST['time'],
    // $conn);
 
-    If($status){
-        header ("Location:../view/potvrda.php");
-        echo "Vaša rezervacija je obrisana!";
-    } else{
+   If($status){
+    // header ("Location:../view/potvrda.php");
+     echo "Success";
+ } else{
 
-        echo "Pokusajte ponovo";
-         header ("Location:../view/potvrda.php");
-    }
+     echo "Pokusajte ponovo";
+      header ("Location:../view/potvrda.php");
+ }
 
 }
+
+
 
 
 
