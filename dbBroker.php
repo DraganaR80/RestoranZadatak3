@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$db = "restoran";
+$db = "restoran2";
 $username = "root";
 $password = "";
 

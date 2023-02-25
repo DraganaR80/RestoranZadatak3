@@ -24,3 +24,5 @@ $("#brisi").click(function(event){
         console.error("Desila se greska: " + textStatus, error);
       }); 
     })
+
+    

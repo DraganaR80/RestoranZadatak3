@@ -1,11 +1,19 @@
 <?php
 require "../dbBroker.php";
-//require " ../model/modelMeni.php";
+require "../model/modelMeni.php";
 require "headerMeni.php";
 require "navbar.php";
 
+
+$meni= Meni::getAll($conn);
+
+if(!$meni){
+
+    echo "Greška pri upitu";
+    exit();
+}
 ?>
-<img src="../images/mulberrystreettavern_Instagram_2600_ig_17918312896562125_ed0f59ed-c7ff-4406-9627-3453cf41e2d6.jpg" alt="">
+<img src="../images/mulberrystreettavern_Instagram_2600_ig_17918312896562125_ed0f59ed-c7ff-4406-9627-3453cf41e2d6.jpg" width="100%" height="5%"  class="2">
 
 <br>
     <div class="meni">
@@ -22,22 +30,22 @@ require "navbar.php";
                 </tr>
             </thead>
             <tbody>
-                <?php
-                if($meni->num_rows==0){
-                  ?>
+                
+            <?php if($meni->num_rows==0){
+                echo " Nema ponude";
 
-<?php
-                } else{
+
+               } else{
 
 while($red= $meni->fetch_array()){
 
 
                 
+            ?>    
                 
                 
                 
-                
-                ?>
+               
                     <tr>
                         <td></td>
                         <td><?php echo $red['id'] ?></td>

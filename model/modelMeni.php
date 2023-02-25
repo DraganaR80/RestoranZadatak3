@@ -65,7 +65,7 @@ public function  setPrice($price) {
 
 public static function getAll(mysqli $conn){
 
-    $q= " SELECT * FROM meni";
+    $q= " SELECT * FROM jelovnik";
     return $conn->query($q);
 
 
