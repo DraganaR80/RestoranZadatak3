@@ -30,12 +30,11 @@
 .meni{
 
     margin: 2% 2% 2% 2%;
-    font-size: smaller;
-    
+    font-size:medium;
+    font-weight: 500;
 
 }
-td {
+th,td{
 
     padding: 10px;
-
 }

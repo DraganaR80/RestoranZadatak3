@@ -1,3 +1,4 @@
+
 <div class="header">
 <ul>
 
@@ -9,4 +10,8 @@
 <li> <button   type="submit" class="rbutton" > <a href="home.php">  REZERVACIJA </a>  </button></li>
 <li> <input type="text" class="pretraga"  id="pretraga"autocomplete="off" placeholder="pretraži" > </li>
 </ul>
+
+
+</div>
+
 </div>
