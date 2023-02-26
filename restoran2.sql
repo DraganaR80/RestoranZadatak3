@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 25, 2023 at 04:36 PM
+-- Generation Time: Feb 26, 2023 at 06:47 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -66,6 +66,19 @@ INSERT INTO `jelovnik` (`id`, `type`, `name`, `quantity`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `id` int(11) NOT NULL,
+  `name` int(11) NOT NULL,
+  `price` int(11) NOT NULL,
+  `total` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `rezervacija`
 --
 
@@ -90,6 +103,12 @@ ALTER TABLE `jelovnik`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `order`
+--
+ALTER TABLE `order`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `rezervacija`
 --
 ALTER TABLE `rezervacija`
@@ -106,10 +125,16 @@ ALTER TABLE `jelovnik`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
+-- AUTO_INCREMENT for table `order`
+--
+ALTER TABLE `order`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `rezervacija`
 --
 ALTER TABLE `rezervacija`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
