@@ -1,12 +1,12 @@
 <?php
-//require " ../dbBroker.php";
+require "../dbBroker.php";
 
 if (!empty($_POST['search'])) {
     $Search_Query = $conn->real_escape_string($_POST['search']);
     $query = "SELECT * FROM jelovnik
     WHERE name LIKE '%{$Search_Query}%' OR type LIKE '%{$Search_Query}%' LIMIT 6 OFFSET 0; ";
-    $result = $conn->query($query) or die($conn->error);
-    $html = "<table class='table";
+    $result = $conn->query($query) ;
+    $html = "<table class='table'>";
     $html .= "
     <tr >
       <th>Broj</th>
@@ -32,5 +32,4 @@ if (!empty($_POST['search'])) {
 } else {
     echo "Unesite pretragu!";
 }
-$conn->close();
 ?>

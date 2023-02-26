@@ -19,9 +19,8 @@ require("navbar.php");
 <input type="text" id="search"  class=" pretrazi" placeholder="Pretraži">
          </div>
 
-<div class="table" id="table">
-    
-<thead>
+<div  >
+    <table class="table" id="table"  >
 <tr>
 <th>Broj</th>
                     <th>Tip</th>
@@ -52,7 +51,8 @@ while($row= mysqli_fetch_assoc($result)){
 }
 ?>
 </tbody>
-
+</table>
+<thead>
 </div>
 
 <div class="galerija">

@@ -31,7 +31,7 @@ $("#brisi").click(function(event){
           $("#table").trigger("reset");
           var search_query = $(this).val();
           $.ajax({
-              url: "controller/search.php",
+              url: "../controller/search.php",
               type: "POST",
               data: {
                   search: search_query
