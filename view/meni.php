@@ -17,6 +17,7 @@ if(!$meni){
 
 <br>
     <div class="meni">
+        fo
         <table class="table" id="tabela">
             <thead>
                 <tr>
@@ -62,13 +63,13 @@ while($red= $meni->fetch_array()){
                     
                     
                         <td class="celija">
-                            <label class="radio-btn">
+                            <label class="checkedB">
                                 
-                                <input type="radio" class="radio" name="checked-donut" value=<?php echo $red['id'] ?>>
-                                <span class="checkmark"></span>
+                                <input type="checkbox" class="check" name="checked" value=<?php echo $red['id'] ?>>
+                               <span class="checkmark"></span>
                             </label>
                         </td>
-                        <td> <button class="dodaj" id="dodaj" >Poruči</button></td>
+                        <td> <button class="dodaj" id="dodaj" name="dodaj" >Poruči</button></td>
                     </tr>
                     <?php
                 }

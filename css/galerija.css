@@ -40,7 +40,24 @@
 
 
         }
-     
+       .pretrazi{
+
+            margin-left: 35%;
+
+
+       }
+       input{
+
+        border-radius: 5px;
+        height: 50px;
+        width: 350px;
+        font-size: 15px;
+        
+
+
+    }
+
+       
 
     .galerija{
 

@@ -18,14 +18,7 @@ $this ->price=$price;
 
 }
 
-public function getid() {
-    return $this->id;
-}
 
-public function  setid($id) {
-    $this->id = $id;
-    return $this;
-}
 
 public function getType() {
     return $this->type;
@@ -36,7 +29,7 @@ public function  setType($type) {
     return $this;
 }
 
-public function geName() {
+public function getName() {
     return $this->id;
 }
 

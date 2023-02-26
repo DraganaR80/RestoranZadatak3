@@ -25,4 +25,20 @@ $("#brisi").click(function(event){
       }); 
     })
 
- 
+
+    $(document).ready(function() {
+      $("#search").on("keyup", function(e) {
+          $("#table").trigger("reset");
+          var search_query = $(this).val();
+          $.ajax({
+              url: "controller/search.php",
+              type: "POST",
+              data: {
+                  search: search_query
+              },
+              success: function($data) {
+                  $("#table").html($data);
+              }
+          });
+      });
+  });
